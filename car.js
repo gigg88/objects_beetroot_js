@@ -21,7 +21,12 @@ const car = {
     },
     timeFrame: function(distance) {
         const journey = distance / this.averageSpeed;
-        console.log(journey);
+        const formattedJourney = journey.toFixed(2);
+        const breaks = Math.floor(formattedJourney / 4) * 1;
+        const journeyWithBreaks = formattedJourney + breaks;
+        console.log(formattedJourney);
+        console.log(breaks);
+        console.log(formattedJourney);
     }
   };
 

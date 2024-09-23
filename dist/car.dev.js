@@ -20,7 +20,12 @@ var car = {
   },
   timeFrame: function timeFrame(distance) {
     var journey = distance / this.averageSpeed;
-    console.log(journey);
+    var formattedJourney = journey.toFixed(2);
+    var breaks = Math.floor(formattedJourney / 4) * 1;
+    var journeyWithBreaks = formattedJourney + breaks;
+    console.log(formattedJourney);
+    console.log(breaks);
+    console.log(formattedJourney);
   }
 };
 car.displayInfo();
